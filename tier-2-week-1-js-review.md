@@ -261,7 +261,7 @@ You can access a property of an object with `dot` or `bracket` notation.
 
 i.e.
 
-`var person = {};
+``var person = {};
 person['firstname'] = 'Mario';
 person['lastname'] = 'Rossi';
 
@@ -271,7 +271,7 @@ console.log(person.firstname);
 person = {'firstname': 'John', 'lastname': 'Doe'}
 
 console.log(person['lastname']);
-// expected output: "Doe"`
+// expected output: "Doe"``
 
 ### - What is the difference between a function and a method?
 ### - Can you give some examples of objects that are built into JavaScript? 
