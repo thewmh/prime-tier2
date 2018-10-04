@@ -2,8 +2,8 @@
 
 Below are some questions you might use to review and practice talking about what you've learned this week.
 
-1 ## General JavaScript questions
-  1 ### - What does it mean that JavaScript is loosely typed?
+## 1 General JavaScript questions
+###   1 - What does it mean that JavaScript is loosely typed?
 
 JavaScript is a loosely typed language, meaning you don’t have to specify what type of information will be stored in a variable in advance. JavaScript automatically types a variable based on what kind of information you assign to it (e.g., that '' or " " to indicate string values). Many other languages, like Java, require you to declare a variable’s type, such as int, float, boolean, or String.
 
