@@ -2,8 +2,8 @@
 
 Below are some questions you might use to review and practice talking about what you've learned this week.
 
-## 1 General JavaScript questions
-###   1 - What does it mean that JavaScript is loosely typed?
+## General JavaScript questions
+### - What does it mean that JavaScript is loosely typed?
 
 JavaScript is a loosely typed language, meaning you don’t have to specify what type of information will be stored in a variable in advance. JavaScript automatically types a variable based on what kind of information you assign to it (e.g., that '' or " " to indicate string values). Many other languages, like Java, require you to declare a variable’s type, such as int, float, boolean, or String.
 
@@ -234,11 +234,45 @@ console.log(isEqualTo5(4)); // ReferenceError: five is not defined
 const doesn’t hoist the declaration → error: reference before declaration→ prevents bug.
 
 ### - What is the difference between a variable being `undefined` and `not defined`?
+
+`undefined` is the result of a declared variable without a value, `not defined` is the result of calling an undeclared variable
+
 ### - What is the difference between `undefined` and `null`?
+
+`undefined` is a type, `null` is an object
+
 ### - Why might JavaScript tell you that 1 + 1 is 11 and not 2?
+
+Because 1 and 1 are strings. When 2 strings are added they are concatenated
+
 ### - What is a template literal string?
+
+Template literals are string literals which allow embedded expressions i.e. ``(`This is a template literal ${'embeddedExpression'}`)``
+
 ### - What is an object?
+
+The Object constructor creates an object wrapper for the given value. If the value is null or undefined, it will create and return an empty object, otherwise, it will return an object of a Type that corresponds to the given value. If the value is an object already, it will return the value.
+
+When called in a non-constructor context, Object behaves identically to new Object().
+
 ### - How do you access a property of an object? Is there more than one way to do this?
+
+You can access a property of an object with `dot` or `bracket` notation.
+
+i.e.
+
+`var person = {};
+person['firstname'] = 'Mario';
+person['lastname'] = 'Rossi';
+
+console.log(person.firstname);
+// expected output: "Mario"
+
+person = {'firstname': 'John', 'lastname': 'Doe'}
+
+console.log(person['lastname']);
+// expected output: "Doe"`
+
 ### - What is the difference between a function and a method?
 ### - Can you give some examples of objects that are built into JavaScript? 
 
