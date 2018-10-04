@@ -3,7 +3,7 @@
 Below are some questions you might use to review and practice talking about what you've learned this week.
 
 ## General JavaScript questions
-- What does it mean that JavaScript is loosely typed?
+### - What does it mean that JavaScript is loosely typed?
 
 JavaScript is a loosely typed language, meaning you don’t have to specify what type of information will be stored in a variable in advance. JavaScript automatically types a variable based on what kind of information you assign to it (e.g., that '' or " " to indicate string values). Many other languages, like Java, require you to declare a variable’s type, such as int, float, boolean, or String.
 
@@ -13,7 +13,7 @@ While JavaScript’s type system gives you a lot of flexibility, it lacks the ca
 
 Here are some useful tips to help you navigate JavaScript’s weird type system.
 
-###1 typeof
+#### 1 typeof
 whenever a variable’s type is in doubt, you can employ the typeof operator:
 
 typeof 1 //> “number”
@@ -28,7 +28,7 @@ const f = () => 2
 typeof f //> “function”
 Key Takeaway: When the type is in doubt, use typeof.
 
-###2 Double Equals Versus Triple Equals
+#### 2 Double Equals Versus Triple Equals
 The === mean “equality without type coercion”. Using the triple equals, the values must be equal in type as well.
 
 1 == “1” //> true
@@ -45,7 +45,7 @@ Note, you can use !== for checking inequality with type coercion:
 1 !== "1" //> true
 Key Takeaway: Always use === since that is a more thorough check and help you avoid nasty bugs.
 
-###3 Checking for Falsiness
+#### 3 Checking for Falsiness
 Using the ! operator (called the “bang” operator) to check for falsiness, we notice the following:
 
 !null //> true
@@ -86,9 +86,9 @@ You need to be careful when you check for truthiness. Use === and check of all t
 Best practice is to check for falsiness instead by using the ! operator to check for all of the falsy values, i.e., null, undefined, 0, “”, and false, in one action.
 Don’t add things to null.
 
-- Explain some similarities and differences between `let`, `const`, and `var`.
+### - Explain some similarities and differences between `let`, `const`, and `var`.
 
-### var, let, or const?
+#### var, let, or const?
 A Gentle Introduction to ES6
 You must understand var to grasp the benefits of let / const. Let’s rewind.
 
@@ -233,50 +233,50 @@ function isEqualTo5(n) {
 console.log(isEqualTo5(4)); // ReferenceError: five is not defined
 const doesn’t hoist the declaration → error: reference before declaration→ prevents bug.
 
-- What is the difference between a variable being `undefined` and `not defined`?
-- What is the difference between `undefined` and `null`?
-- Why might JavaScript tell you that 1 + 1 is 11 and not 2?
-- What is a template literal string?
-- What is an object?
-- How do you access a property of an object? Is there more than one way to do this?
-- What is the difference between a function and a method?
-- Can you give some examples of objects that are built into JavaScript? 
+### - What is the difference between a variable being `undefined` and `not defined`?
+### - What is the difference between `undefined` and `null`?
+### - Why might JavaScript tell you that 1 + 1 is 11 and not 2?
+### - What is a template literal string?
+### - What is an object?
+### - How do you access a property of an object? Is there more than one way to do this?
+### - What is the difference between a function and a method?
+### - Can you give some examples of objects that are built into JavaScript? 
 
 ## Arrays
-- What is an array?  
-- How do you get the first item in an array?  How do you get the last?
-- What is the difference between the Array `push()` & `pop()` methods and the `shift()` & `unshift()` methods?
-- Explain how `const` works with an array. Can you still add, remove and change values in the array? Why or why not?
+### - What is an array?  
+### - How do you get the first item in an array?  How do you get the last?
+### - What is the difference between the Array `push()` & `pop()` methods and the `shift()` & `unshift()` methods?
+### - Explain how `const` works with an array. Can you still add, remove and change values in the array? Why or why not?
 
 
 ## Functions
-- Can a function be assigned to a variable?  (Can a variable hold/refer to a function?)
-- What is a pure function?
-- What is the difference between procedural programming and functional programming?
-- What are some benefits of functional programming or using *pure* functions?
-- Write a function declaration for a function that adds two numbers and returns the result.
-- Write a function expression for the same function.
-- What are some differences between a function declaration and a function expression. 
-- What is an anonymous function? Give an example of where you might you use one?
+### - Can a function be assigned to a variable?  (Can a variable hold/refer to a function?)
+### - What is a pure function?
+### - What is the difference between procedural programming and functional programming?
+### - What are some benefits of functional programming or using *pure* functions?
+### - Write a function declaration for a function that adds two numbers and returns the result.
+### - Write a function expression for the same function.
+### - What are some differences between a function declaration and a function expression. 
+### - What is an anonymous function? Give an example of where you might you use one?
 
 ## Loops
-- Write a loop to iterate through (or loop over) all the properties of an object.
-- Write a loop to iterate over all the items in an array. Can you do this more than one way? How many different ways can you think of to do this?
+### - Write a loop to iterate through (or loop over) all the properties of an object.
+### - Write a loop to iterate over all the items in an array. Can you do this more than one way? How many different ways can you think of to do this?
 
 ## Testing 
-- What is unit testing? Why is it important?
-- What is a test case? 
-- You've been asked to write a function to check that a zip code is valid.
-  - What questions might you ask to clarify this problem? 
-  - What are some test cases you might write? 
+### - What is unit testing? Why is it important?
+### - What is a test case? 
+### - You've been asked to write a function to check that a zip code is valid.
+###   - What questions might you ask to clarify this problem? 
+###   - What are some test cases you might write? 
 
 ## Objects & OOP
-- What is an object?
-- How might you write an __object constructor function__ for a *Square* object?
-- How might you write a __class__ for a *Square* object?
-- What are similarities and differences between the syntax used for an object constructor function and a class?
-- What are similarities and differences between the object produced from an object constructor function and a class?
-- What is a method? How is it different from a function?
-- How do you access a property on an object?
-- How would you access an object's property using a variable for the property name?
-- Write a loop to iterate over all the properties in an object.
+### - What is an object?
+### - How might you write an __object constructor function__ for a *Square* object?
+### - How might you write a __class__ for a *Square* object?
+### - What are similarities and differences between the syntax used for an object constructor function and a class?
+### - What are similarities and differences between the object produced from an object constructor function and a class?
+### - What is a method? How is it different from a function?
+### - How do you access a property on an object?
+### - How would you access an object's property using a variable for the property name?
+### - Write a loop to iterate over all the properties in an object.
